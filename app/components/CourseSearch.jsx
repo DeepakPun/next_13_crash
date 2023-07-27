@@ -17,20 +17,26 @@ const CourseSearch = ({ getSearchResults }) => {
   };
 
   return (
-    <form className='search-form' onChange={handleSubmit}>
-      {/* <form className='search-form' onSubmit={handleSubmit}> */}
-      <input
-        type='text'
-        className='search-input'
-        placeholder='Search Courses...'
-        value={query}
-        onChange={e => setQuery(e.target.value)}
-      />
+    <div className='container'>
+      <form
+        className='search-form'
+        onChange={handleSubmit}
+        onSubmit={handleSubmit}
+      >
+        {/* <form className='search-form' onSubmit={handleSubmit}> */}
+        <input
+          type='text'
+          className='search-input'
+          placeholder='Search Courses...'
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+        />
 
-      <button className='search-button' type='submit'>
-        Search
-      </button>
-    </form>
+        <button className='search-button' type='submit'>
+          Search
+        </button>
+      </form>
+    </div>
   );
 };
 

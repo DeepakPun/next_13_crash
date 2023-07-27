@@ -19,7 +19,6 @@ async function fetchRepos() {
 
 const ReposPage = async () => {
   const repos = await fetchRepos();
-  console.log(repos);
 
   return (
     <div className='repos-container'>
