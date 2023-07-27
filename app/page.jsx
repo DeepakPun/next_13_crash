@@ -25,11 +25,11 @@ const HomePage = () => {
   }
 
   return (
-    <>
-      <h1>Welcome To Traversy Media</h1>
+    <div>
+      <h1 className='mx-auto'>Welcome To Traversy Media</h1>
       <CourseSearch getSearchResults={results => setCourses(results)} />
       <Courses courses={courses} />
-    </>
+    </div>
   );
 };
 
